@@ -1,8 +1,13 @@
-name = input('Your name: ')
-list = [name]
-for i in range(1, 23):
-  print(name)
-for i in range(1, 23):
-  print(i, name)
-for i in range(1, 23):
-  print(name, end = ' ')
+list=[]
+N = int(input("How many people was:"))
+for i in range (N):
+  mass=int(input("YOur mass: "))
+  list.append(mass)
+listsum=sum(list)
+print(listsum)
+listavg=sum(list)/len(list)
+print(listavg)
+if listsum > 300:
+  print("They can't go all together")
+else:
+  print("They can go all together")
